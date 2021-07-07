@@ -1,14 +1,23 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package clases;
 
-/**
- *
- * @author Netto
- */
 public class Caja {
-    
+
+    int ancho;
+    int alto;
+    int profundo;
+
+    //constructor vacio
+    public Caja() {
+    }
+
+    //sobrecarga del constructor
+    public Caja(int ancho, int alto, int profundo) {
+        this.ancho = ancho;
+        this.alto = alto;
+        this.profundo = profundo;
+    }
+
+    public int calcularVolumen() {
+        return this.ancho * this.alto * this.profundo;
+    }
 }
